@@ -1,0 +1,127 @@
+/* App.css */
+
+/* Global Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  transition: all 0.2s ease-in-out;
+}
+
+body {
+  background: linear-gradient(to right, #f5f7fa, #c3cfe2);
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  padding-top: 40px;
+}
+
+/* Container */
+.grocery_form {
+  background-color: white;
+  padding: 50px 100px;
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  width: 90%;
+  max-width: 500px;
+ 
+}
+
+h2 {
+  color: #333;
+  font-size: 28px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+/* Input Fields */
+input[type="text"],
+input[type="number"] {
+  width: 100%;
+  padding: 10px 14px;
+  margin-bottom: 15px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  font-size: 16px;
+}
+
+input:focus {
+  outline: none;
+  border-color: #28a745;
+  box-shadow: 0 0 5px rgba(40, 167, 69, 0.4);
+}
+
+/* Button Styles */
+button {
+  padding: 10px 16px;
+  border: none;
+  border-radius: 6px;
+  font-size: 15px;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+button:hover {
+  opacity: 0.9;
+}
+
+button:active {
+  transform: scale(0.98);
+}
+
+button[type="submit"],
+.grocery_form > button {
+  background-color: #28a745;
+  color: white;
+}
+
+button[type="submit"]:hover,
+.grocery_form > button:hover {
+  background-color: #218838;
+}
+
+/* List Styling */
+ul {
+  list-style: none;
+  padding-left: 0;
+  margin-top: 20px;
+}
+
+li {
+  background: #f8f9fa;
+  margin-bottom: 10px;
+  padding: 12px 16px;
+  border-radius: 8px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 17px;
+  border-left: 5px solid #28a745;
+}
+
+/* Buttons inside list items */
+li button {
+  margin-left: 8px;
+  padding: 6px 10px;
+  font-size: 14px;
+  border-radius: 4px;
+}
+
+li button:first-of-type {
+  background-color: #ffc107;
+  color: #fff;
+}
+
+li button:first-of-type:hover {
+  background-color: #e0a800;
+}
+
+li button:last-of-type {
+  background-color: #dc3545;
+  color: white;
+}
+
+li button:last-of-type:hover {
+  background-color: #c82333;
+}
